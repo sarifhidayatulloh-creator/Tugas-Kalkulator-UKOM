@@ -1,0 +1,72 @@
+<html>
+<head>
+  <title> Kalkulator sederhana</title>
+</head>
+<script language="Javascript">
+
+ 
+ function tambah(){
+   a=eval(form.a.value)
+   b=eval(form.b.value)
+   c=a+b
+   form.hasil.value=c
+ 
+ }
+ 
+ function kurang(){
+   a=eval(form.a.value)
+   b=eval(form.b.value)
+   c=a-b
+   form.hasil.value=c
+ 
+ }
+ 
+ function kali(){
+   a=eval(form.a.value)
+   b=eval(form.b.value)
+   c=a*b
+   form.hasil.value=c
+ 
+ }
+ 
+ function bagi(){
+   a=eval(form.a.value)
+   b=eval(form.b.value)
+   c=a/b
+   form.hasil.value=c
+ 
+ }
+
+</script>
+<style type="text/css">
+
+</style>
+  <h1 align="center"><font color="red"> Program Keahlian<br> kalkulator</h1>
+  <form name="form">
+    <h2 align="center"><font color="blue">Kelas 12 RPL</h2>
+	<table align="center" border="1" >
+	<tr>
+	<td align="center" widht="334" hight="170" bgcolor="cyan">
+	<br>
+	<font color="red"> Angka 1</b>
+	<input type="text" name="a">
+	<br>
+	<br>
+	<font color="green">Angka 2 </b>
+	<input type="text" name="b">
+	<br>
+	<br>
+	<input type="button" value="+" onclick="tambah()">
+	<input type="button" value="-" onclick="kurang()">
+	<input type="button" value="*" onclick="kali()">
+	<input type="button" value="/" onclick="bagi()">
+	<input name="reset" type="reset" id="reset" value="reset">
+	<br>
+	<br>
+	<b><font color="red"> Hasil <br><input type="text" name="hasil" >
+	</td>
+	</tr>
+  </form>
+<body>
+</body>
+</html>
